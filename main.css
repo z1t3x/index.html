@@ -1,0 +1,54 @@
+.second {
+  background: grey;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  align-items: center;
+}
+
+.block {
+  width: 420px;
+  height: 420px;
+  background: red;
+  margin: 110px;
+  animation: name 2s ease infinite;
+}
+
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  text-decoration: none;
+}
+
+.block:hover {
+  background: blue;
+}
+
+@keyframes name {
+    0% {
+      background: black;
+      color: red;
+    }
+    17% {
+      background: red;
+    }
+    50% {
+      background: yellow;
+      color: blue;
+    }
+    100%{
+      background: blue;
+      color: white;
+    }
+}
+
+.block:hover
+{
+    animation-play-state: paused;
+}
